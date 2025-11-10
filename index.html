@@ -162,7 +162,152 @@
   </div>
   <div class="note">Reflection: “คุณเห็น sweep เกิดบ่อยในช่วงเปิด London/NY หรือไม่? หลัง sweep → อะไรคือหลักฐานว่าสมาร์ตมันนี่เปลี่ยนมือ?”</div>
 </section>
+<!-- CH03 -->
+<section class="page">
+  <h1>CH03 — Order Block & FVG Mastery</h1>
+  <div class="section">
+    <div class="block-title">Objective</div>
+    <p>เข้าใจวิธีใช้ <b>Order Block</b> และ <b>Fair Value Gap (FVG)</b> เพื่อระบุ "โซนที่ตลาดยังมีแรงเหลือ"  
+    เป้าหมายคือระบุว่า OB ไหนยัง “สด” (valid) และ FVG ไหนเป็น value ที่สมดุลที่สุด</p>
+  </div>
+  <div class="section">
+    <div class="block-title">Process (จับมือทำ)</div>
+    <ol>
+      <li>เริ่มจากโครงสร้าง BOS ล่าสุด เพื่อหาทิศทาง (Bias)</li>
+      <li>มองย้อนกลับหาช่วงแท่งก่อน BOS — แท่งสุดท้ายที่สร้างแรงคือ OB</li>
+      <li>หาช่องว่างระหว่างแท่ง (FVG) หลัง BOS นั้น</li>
+      <li>ใช้ 50% ของ FVG หรือ OB-body เป็น “Value Zone” สำหรับการรอย่อเข้า</li>
+      <li>หาก OB ซ้อนใน FVG → โอกาสเป็นจุด Reverse สูง</li>
+    </ol>
+  </div>
+  <div class="section">
+    <div class="block-title">What to Observe & Why</div>
+    <ul>
+      <li>OB ที่แท่ง “displacement candle” มี volume สูง = OB แท้</li>
+      <li>FVG ที่ราคา “กลับมาแตะครึ่งหนึ่ง” แล้ว reject → แสดงว่าแรงสมดุลกลับมา</li>
+      <li>Zone ที่มีทั้ง OB และ FVG ทับกัน = Confluence Zone</li>
+    </ul>
+  </div>
+  <figure class="chart">
+    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTIwMCcgaGVpZ2h0PSc3MDAnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHJlY3Qgd2lkdGg9JzEwMCUnIGhlaWdodD0nMTAwJScgZmlsbD0nIzBiMGYxNCcvPjx0ZXh0IHg9JzUwJScgeT0nNTAlJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmaWxsPSIjOWZiMWM3IiBmb250LXNpemU9JzI4Jz5PcmRlciBCbG9jayAmIEZWRyBFbnRyeTwvdGV4dD48L3N2Zz4=">
+    <figcaption>Order Block & FVG ตัวอย่าง</figcaption>
+  </figure>
+  <div class="section">
+    <div class="block-title">Common Mistakes</div>
+    <ul>
+      <li>เข้า OB ที่หมดแรง (ผ่าน retest ไปแล้ว)</li>
+      <li>ไม่ดู FVG ซ้อน OB — พลาดจุดที่ RR ดีกว่า</li>
+      <li>ใช้ OB/FVG โดยไม่อิง Bias (สวนเทรนด์)</li>
+    </ul>
+  </div>
+  <div class="note">Reflection: “OB ไหนที่ยังมีแรง? ให้ดูแท่งที่เกิด BOS ถัดไปตอบแทน — ถ้ายังใช้ OB เดิมอยู่ = แรงยังไม่หมด”</div>
+</section>
 
+<!-- CH04 -->
+<section class="page">
+  <h1>CH04 — Fibonacci & Value Alignment</h1>
+  <div class="section">
+    <div class="block-title">Objective</div>
+    <p>เรียนรู้การใช้ <b>Fibonacci Retracement</b> อย่างถูกต้อง เพื่อหาจุดย่อ (Discount) และจุดขาย (Premium)  
+    เชื่อมโยงกับ OB/FVG เพื่อระบุโซนที่ “ตลาดต้องการกลับเข้าสมดุล”</p>
+  </div>
+  <div class="section">
+    <div class="block-title">Process (จับมือทำ)</div>
+    <ol>
+      <li>ถ้ามองขา Buy → กางจาก Swing Low → Swing High</li>
+      <li>ถ้ามองขา Sell → กางจาก Swing High → Swing Low</li>
+      <li>Zone สำคัญ: <b>50.0%</b>, <b>61.8%</b>, <b>78.6%</b></li>
+      <li>หาก OB/FVG อยู่ในโซนเดียวกับระดับ Fib → คือ Confluence Value Zone</li>
+      <li>ตั้ง TP1 ที่ Swing High/Low ล่าสุด, TP2 ที่ระดับ FVG ครบ, TP3 ที่ 1.272 extension</li>
+    </ol>
+  </div>
+  <figure class="chart">
+    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTIwMCcgaGVpZ2h0PSc3MDAnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHJlY3Qgd2lkdGg9JzEwMCUnIGhlaWdodD0nMTAwJScgZmlsbD0nIzBiMGYxNCcvPjx0ZXh0IHg9JzUwJScgeT0nNTAlJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmaWxsPSIjOWZiMWM3IiBmb250LXNpemU9JzI4Jz5GaWJvbmFjY2kgU2V0dXA8L3RleHQ+PC9zdmc+">
+    <figcaption>Fibonacci Retracement + OB Alignment</figcaption>
+  </figure>
+  <div class="section">
+    <div class="block-title">Common Mistakes</div>
+    <ul>
+      <li>กาง Fib ผิดทิศ (สวนโครงสร้าง)</li>
+      <li>ใช้ 61.8 โดยไม่ดู OB/FVG ซ้อน — ทำให้โดน stop ก่อนวิ่ง</li>
+      <li>ลืมดู Liquidity ฝั่งตรงข้าม → ไม่รู้ว่าราคาอาจ sweep ก่อนเข้า zone</li>
+    </ul>
+  </div>
+  <div class="note">Reflection: “ระดับไหนคือจุด Discount จริง? — ดู OB/FVG ในบริเวณนั้นประกอบเสมอ”</div>
+</section>
+
+<!-- CH05 -->
+<section class="page">
+  <h1>CH05 — Multi-Timeframe Confirmation</h1>
+  <div class="section">
+    <div class="block-title">Objective</div>
+    <p>เชื่อมโยง Timeframe ทั้งหมดเข้าด้วยกัน (4H → 1H → 15m → 5m → 1m)  
+    เพื่อยืนยัน Bias, Value Zone และจุดเข้า Exit อย่างมีระบบ</p>
+  </div>
+  <div class="section">
+    <div class="block-title">Process (จับมือทำ)</div>
+    <ol>
+      <li><b>4H:</b> หาทิศทางหลัก + โครงสร้างใหญ่ (BOS, CHoCH)</li>
+      <li><b>1H:</b> หาโซน OB/FVG ที่ตรงกับ Bias</li>
+      <li><b>15m:</b> ดู sweep และยืนยัน micro BOS</li>
+      <li><b>5m–1m:</b> หาจุดเข้าแบบ “lower-timeframe trigger”</li>
+    </ol>
+  </div>
+  <figure class="chart">
+    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTIwMCcgaGVpZ2h0PSc3MDAnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHJlY3Qgd2lkdGg9JzEwMCUnIGhlaWdodD0nMTAwJScgZmlsbD0nIzBiMGYxNCcvPjx0ZXh0IHg9JzUwJScgeT0nNTAlJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmaWxsPSIjOWZiMWM3IiBmb250LXNpemU9JzI4Jz5NdWx0aS1UZXJtZnJhbWUgTWFwPC90ZXh0Pjwvc3ZnPg==">
+    <figcaption>Multi-Timeframe Confirmation Example</figcaption>
+  </figure>
+  <div class="section">
+    <div class="block-title">Observation</div>
+    <ul>
+      <li>ยืนยันเทรนด์จาก Timeframe ใหญ่ก่อนเสมอ</li>
+      <li>Micro BOS คือตัวกระตุ้น entry ที่ปลอดภัยกว่า</li>
+      <li>ถ้าแต่ละ TF ไม่สอดคล้องกัน → ยังไม่พร้อมเข้าเทรด</li>
+    </ul>
+  </div>
+  <div class="note">Reflection: “เมื่อ TF เล็กบอกว่าเข้าได้ แต่ TF ใหญ่ยังสวนทิศ — คุณจะเลือกเชื่อใคร?”</div>
+</section>
+
+<!-- CH06 -->
+<section class="page">
+  <h1>CH06 — Session Map & Timing</h1>
+  <div class="section">
+    <div class="block-title">Objective</div>
+    <p>เข้าใจจังหวะของตลาดในแต่ละช่วงเวลา เพื่อรู้ว่า “แรง” จะเกิดเมื่อใด  
+    ตลาดไม่เคลื่อนไหวตลอดเวลา — แต่จะระเบิดเมื่อถึง Session สำคัญ</p>
+  </div>
+  <div class="section">
+    <div class="block-title">Session Profiles</div>
+    <ul>
+      <li><b>Asia Session:</b> ช่วงสะสม (range) — เหมาะดู sweep และ liquidity trap</li>
+      <li><b>London Session:</b> จุดเริ่ม “จริงจัง” ของวัน — เกิด displacement แรก</li>
+      <li><b>New York Session:</b> ช่วง follow หรือ reversal หลัง news</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="block-title">Timing Framework</div>
+    <ol>
+      <li>ตีกรอบเวลา Asia (00:00–06:00 UTC)</li>
+      <li>ตีกรอบ London (07:00–12:00 UTC)</li>
+      <li>ตีกรอบ NY (13:00–17:00 UTC)</li>
+      <li>สังเกต sweep เกิดช่วงเปิด session</li>
+      <li>ใช้ OB/FVG ของ session ก่อนหน้า เป็น reference zone</li>
+    </ol>
+  </div>
+  <figure class="chart">
+    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTIwMCcgaGVpZ2h0PSc3MDAnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHJlY3Qgd2lkdGg9JzEwMCUnIGhlaWdodD0nMTAwJScgZmlsbD0nIzBiMGYxNCcvPjx0ZXh0IHg9JzUwJScgeT0nNTAlJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmaWxsPSIjOWZiMWM3IiBmb250LXNpemU9JzI4Jz5TZXNzaW9uIE1hcCBFeGFtcGxlPC90ZXh0Pjwvc3ZnPg==">
+    <figcaption>Session Map Example</figcaption>
+  </figure>
+  <div class="section">
+    <div class="block-title">Common Mistakes</div>
+    <ul>
+      <li>เทรดช่วง Asia โดยไม่รู้ว่ามันคือช่วง “สะสม”</li>
+      <li>ไม่รู้ว่า news ของ NY สามารถล้างทั้งวันได้</li>
+      <li>เข้าเทรดช้าเกินหลัง session move จบไปแล้ว</li>
+    </ul>
+  </div>
+  <div class="note">Reflection: “ทุกครั้งที่คุณเปิดกราฟ ลองถามตัวเอง — ตอนนี้ตลาดอยู่ใน Session ไหน และแรงกำลังจะเริ่มหรือกำลังจะหมด?”</div>
+</section>
 <div class="footer">Whispers of Smart Money — Master v5.3 • Part 1/3 • © gogdood666</div>
 
 </body>
