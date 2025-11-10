@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Whispers of Smart Money — Master v5.3 (Part 1/3)</title>
+<style>
+  @page { size:A4; margin:14mm; }
+  html,body{background:#0b0f14}
+  body{
+    color:#e7edf5; font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, "Noto Sans Thai", "Kanit", sans-serif;
+    line-height:1.65; font-size:11.25pt; margin:0;
+  }
+  .page{page-break-after:always; padding:20mm 18mm; background:#0b0f14}
+  h1{font-size:22pt; margin:0 0 8mm; letter-spacing:.3px}
+  h2{font-size:15pt; margin:6mm 0 3mm; color:#cfd8e5}
+  h3{font-size:13pt; margin:4mm 0 2mm; color:#b2c0d3}
+  ul,ol{margin:0; padding-left:18px}
+  .cover{ text-align:center; margin-top:55mm; position:relative; }
+  .crest{
+    position:absolute; top:28mm; right:28mm; width:84px; height:84px;
+    background: radial-gradient(circle at 40% 40%, #cfd6e5 0%, #8b99ad 65%, #0b0f14 100%);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display:flex; align-items:center; justify-content:center; font-weight:800; color:#0b0f14; font-size:22pt;
+    text-shadow:0 0 2px rgba(255,255,255,.4);
+  }
+  .title{font-size:32pt; font-weight:800; letter-spacing:.8px}
+  .subtitle{margin-top:6px; font-size:14pt; color:#a9b4c3}
+  .author{margin-top:20mm; font-size:12pt; color:#9fb1c7}
+  .quote{ text-align:center; color:#9bb3d2; font-style:italic; margin-top:12mm }
+  .section{border:1px solid #1c2b3c; background:#0f141d; border-radius:10px; margin:6mm 0; padding:6mm 8mm;}
+  .block-title{font-weight:800; font-size:13pt; color:#c9d6e4; border-bottom:1px solid #1f2c3a; margin-bottom:4mm; padding-bottom:2mm;}
+  .chart{margin:6mm 0; text-align:center;}
+  .chart img{width:100%; max-width:720px; border-radius:10px; border:1px solid #243246; background:#0b0f14;}
+  .chart figcaption{font-size:9.8pt; color:#90a0b6; margin-top:4px;}
+  .note{color:#8ea5c1; margin-top:3mm; font-size:10.5pt;}
+  .toc li{list-style:none; display:flex; justify-content:space-between; border-bottom:1px dotted #263243; padding:2mm 0}
+  .toc .t{max-width:80%}
+  .toc .p{color:#8aa1ba}
+  .footer{text-align:center; margin-top:10mm; color:#8aa1ba; font-size:9pt}
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<section class="page cover">
+  <div class="crest">S</div>
+  <div class="title">Whispers of Smart Money</div>
+  <div class="subtitle">The Hidden Geometry of Markets</div>
+  <div class="author">by <b>gogdood666</b></div>
+  <div class="quote">“ตลาดไม่พูดตรง ๆ — แต่มันกระซิบผ่านโครงสร้างและสภาพคล่อง”</div>
+</section>
+
+<!-- TOC (printed style only) -->
+<section class="page">
+  <h1>สารบัญ (รูปแบบพิมพ์ — ไม่มีลิงก์)</h1>
+  <ul class="toc">
+    <li><span class="t">ปก</span><span class="p">—</span></li>
+    <li><span class="t">สารบัญ</span><span class="p">—</span></li>
+    <li><span class="t">บทนำ — DGL (Deep Guided Learning)</span><span class="p">—</span></li>
+    <li><span class="t">CH01 — Market Structure (BOS/CHoCH)</span><span class="p">—</span></li>
+    <li><span class="t">CH02 — Liquidity & Inducement</span><span class="p">—</span></li>
+  </ul>
+</section>
+
+<!-- INTRO -->
+<section class="page">
+  <h1>บทนำ — DGL (Deep Guided Learning)</h1>
+  <div class="section">
+    <div class="block-title">เป้าหมายของหนังสือ</div>
+    <p>เล่มนี้สร้างเพื่อ “สอนให้คิด + จับมือทำ” จนคุณอ่านตลาดได้อย่างเป็นระบบ — ไม่ใช่แค่จำรูปแบบ แต่เข้าใจเหตุผลเชิงโครงสร้างและจิตวิทยาของราคา</p>
+    <ul>
+      <li><b>Objective:</b> ระบุเป้าหมายให้ชัดในทุกบท</li>
+      <li><b>Process:</b> ทำทีละขั้น ตั้งแต่มุมมองภาพใหญ่จนถึงจุดเข้าจริง</li>
+      <li><b>Observation & Why:</b> ดูอะไร ทำไมถึงดู สิ่งนั้นสะท้อนอะไร</li>
+      <li><b>Worked Example:</b> ใช้กราฟจริง TradingView (ฝังในเล่ม)</li>
+      <li><b>Reflection:</b> คำถามสะท้อน—เพื่อสร้างสัญชาตญาณการตัดสินใจ</li>
+    </ul>
+  </div>
+  <div class="note">เคล็ดลับ: “อย่ารีบเข้า จนกว่าจะยืนยันด้วย <b>โครงสร้าง</b> + <b>สภาพคล่อง</b> + <b>ค่า (Value)</b> + <b>เวลา</b> ครบ 4 อย่าง”</div>
+</section>
+
+<!-- CH01 -->
+<section class="page">
+  <h1>CH01 — Market Structure (BOS/CHoCH)</h1>
+  <div class="section">
+    <div class="block-title">Objective</div>
+    <p>กำหนด <b>Directional Bias</b> ด้วยหลักฐาน: <b>BOS</b> (แท่งปิดทำลายโครงสร้างเดิมอย่างมีแรง) และใช้ <b>CHoCH</b> เป็นสัญญาณเปลี่ยนมือ</p>
+  </div>
+  <div class="section">
+    <div class="block-title">Process (จับมือทำ)</div>
+    <ol>
+      <li>วาดสวิงหลัก HH/HL หรือ LH/LL ให้ชัด (ข้าม noise)</li>
+      <li>รอแท่ง <b>displacement</b> ปิดทะลุสวิง (BOS)</li>
+      <li>หลัง BOS ให้หา value ถัดไป (OB/FVG/Fib) เพื่อยืนยันจุดเข้า</li>
+      <li>ย่อลง TF 15m→5m→1m เพื่อหา micro BOS เป็นทริกเกอร์</li>
+    </ol>
+  </div>
+  <div class="section">
+    <div class="block-title">What to Observe & Why</div>
+    <ul>
+      <li><b>Follow-through</b> หลัง BOS — คือแรงต่อเนื่อง ไม่ใช่แค่แทงทะลุเฉย ๆ</li>
+      <li>BOS ใกล้ value zone (ไม่ใช่กลาง range) → เพิ่มโอกาส RR ดี</li>
+      <li>CHoCH = จุด “เปลี่ยนบทสนทนา” ของแรงซื้อ–ขาย</li>
+    </ul>
+  </div>
+
+  <!-- CH01 charts (placeholders เพื่อให้พิมพ์ได้ทันที) -->
+  <figure class="chart">
+    <img alt="CH01 Example 1" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTIwMCcgaGVpZ2h0PSc3MDAnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHJlY3Qgd2lkdGg9JzEwMCUnIGhlaWdodD0nMTAwJScgZmlsbD0nIzBiMGYxNCcvPjx0ZXh0IHg9JzUwJScgeT0nNTAlJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmaWxsPSIjOWZiMWM3IiBmb250LXNpemU9JzI4Jz5DSEAxIEJPUy9DSE9DSEggKDEpPC90ZXh0Pjwvc3ZnPg==">
+    <figcaption>ตัวอย่าง BOS/CHoCH (1)</figcaption>
+  </figure>
+  <figure class="chart">
+    <img alt="CH01 Example 2" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTIwMCcgaGVpZ2h0PSc3MDAnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHJlY3Qgd2lkdGg9JzEwMCUnIGhlaWdodD0nMTAwJScgZmlsbD0nIzBiMGYxNCcvPjx0ZXh0IHg9JzUwJScgeT0nNTAlJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmaWxsPSIjOWZiMWM3IiBmb250LXNpemU9JzI4Jz5DSEAxIEJPUy9DSE9DSEggKDIpPC90ZXh0Pjwvc3ZnPg==">
+    <figcaption>ตัวอย่าง BOS/CHoCH (2)</figcaption>
+  </figure>
+
+  <div class="section">
+    <div class="block-title">Common Mistakes</div>
+    <ul>
+      <li>ตีโครงสร้างจาก noise ทำให้เห็น BOS หลอก</li>
+      <li>เข้าเทรดทันทีหลัง BOS โดยไม่รอ value</li>
+      <li>ละเลย timeframe ใหญ่จนสวนทิศภาพรวม</li>
+    </ul>
+  </div>
+  <div class="note">Reflection: “ถ้าคุณลบทุกเส้นออก เหลือเพียงสวิงและแท่งปิด — ยังยืนยัน BOS เดิมได้หรือไม่?”</div>
+</section>
+
+<!-- CH02 -->
+<section class="page">
+  <h1>CH02 — Liquidity & Inducement</h1>
+  <div class="section">
+    <div class="block-title">Map สภาพคล่อง</div>
+    <ul>
+      <li>PDH/PDL, Asia Range (H/L), <b>EQH/EQL</b> คือกอง SL ตามธรรมชาติ</li>
+      <li>พฤติกรรมซ้ำ: <b>Sweep → BOS</b> ก่อนเลือกทิศจริง</li>
+      <li>อย่าไล่ตาม sweep — รอเข้าใน value หลังการกวาด</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="block-title">Process (จับมือทำ)</div>
+    <ol>
+      <li>ขีด PDH/PDL + Asia Range ก่อนเสมอ</li>
+      <li>หา EQH/EQL และ “เทียบฝั่ง” กับ Bias</li>
+      <li>รอ sweep เก็บ stop → แล้วค่อยหาจุดเข้าใน FVG/OB</li>
+    </ol>
+  </div>
+
+  <!-- CH02 charts (placeholders เพื่อให้พิมพ์ได้ทันที) -->
+  <figure class="chart">
+    <img alt="CH02 Example 1" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTIwMCcgaGVpZ2h0PSc3MDAnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHJlY3Qgd2lkdGg9JzEwMCUnIGhlaWdodD0nMTAwJScgZmlsbD0nIzBiMGYxNCcvPjx0ZXh0IHg9JzUwJScgeT0nNTAlJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmaWxsPSIjOWZiMWM3IiBmb250LXNpemU9JzI4Jz5DSEAyIExpcXVpZGl0eSAoMSk8L3RleHQ+PC9zdmc+">
+    <figcaption>ตัวอย่าง Liquidity (1)</figcaption>
+  </figure>
+  <figure class="chart">
+    <img alt="CH02 Example 2" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTIwMCcgaGVpZ2h0PSc3MDAnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHJlY3Qgd2lkdGg9JzEwMCUnIGhlaWdodD0nMTAwJScgZmlsbD0nIzBiMGYxNCcvPjx0ZXh0IHg9JzUwJScgeT0nNTAlJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmaWxsPSIjOWZiMWM3IiBmb250LXNpemU9JzI4Jz5DSEAyIEluZHVjZW1lbnQgKDIpPC90ZXh0Pjwvc3ZnPg==">
+    <figcaption>ตัวอย่าง Inducement (2)</figcaption>
+  </figure>
+
+  <div class="section">
+    <div class="block-title">Why It Matters</div>
+    <p>ตลาดต้องใช้ <b>สภาพคล่อง</b> (Stop/Limit) เพื่อเคลื่อนแรง — จุดสูงต่ำที่ชัดเจนจึงเป็น “ถังเชื้อเพลิง” ก่อนวิ่งจริง</p>
+  </div>
+  <div class="note">Reflection: “คุณเห็น sweep เกิดบ่อยในช่วงเปิด London/NY หรือไม่? หลัง sweep → อะไรคือหลักฐานว่าสมาร์ตมันนี่เปลี่ยนมือ?”</div>
+</section>
+
+<div class="footer">Whispers of Smart Money — Master v5.3 • Part 1/3 • © gogdood666</div>
+
+</body>
+</html>
